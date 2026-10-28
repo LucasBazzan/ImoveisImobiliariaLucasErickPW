@@ -16,7 +16,6 @@ class Imobiliaria {
     public function get_telefone() : string { return $this->telefone; }
     public function get_contato()  : string { return $this->contato; }
 
-
     public function listar_imobiliarias() : array {
         $database = new Database();
         $pdo = $database->database_connect();

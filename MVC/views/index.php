@@ -69,7 +69,7 @@ $imoveis = $modelo_imovel->listar_imoveis();
                         <li><a class="dropdown-item rounded-2" href="inserir_imoveis.php">Inserir Imóvel</a></li>
                         <li>
                             <a class="dropdown-item rounded-2 text-danger" href="deletar_imoveis.php" 
-                                id="btn-deletar-imoveis" data-possui-imoveis="false">Deletar Imóvel</a>
+                                id="btn-deletar-imoveis" data-possui-imoveis="true">Deletar Imóvel</a>
                         </li>
                         
                         <li><hr class="dropdown-divider"></li>
