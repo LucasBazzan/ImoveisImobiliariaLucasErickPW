@@ -30,27 +30,19 @@ $imobiliarias = $imobiliaria->listar_imobiliarias();
 
     ::-webkit-inner-spin-button, ::-webkit-outer-spin-button { appearance: none; }
 
-    .card-parceira {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card-parceira:hover {
-        transform: translateY(-4px);
-    }
+    .card-parceira { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .card-parceira:hover { transform: translateY(-4px); }
 </style>
 <body>
     <div class="container-fluid d-flex flex-column gap-5">
-        <!-- Navbar padrão Wellersons -->
         <div class="navbar align-items-center justify-content-between px-4 mt-2 gap-4 bg-dark rounded-5">
             <div class="text-white display-2"> WELLERSONS </div>
             <div class="d-flex gap-4 align-items-center">
                 <button class="btn btn-dark m-2 fs-3 px-3 rounded-4 border-white" onclick="window.location.href = 'index.php'"> Voltar </button>
             </div>
         </div>
-
-        <!-- Conteúdo Principal -->
         <div class="container my-2 px-3">
             <h2 class="display-5 text-center text-dark mb-5">Nossas Parceiras</h2>
-
             <?php if (!empty($imobiliarias)): ?>
                 <div class="row g-4 justify-content-center">
                     <?php foreach ($imobiliarias as $item): ?>
@@ -65,9 +57,7 @@ $imobiliarias = $imobiliaria->listar_imobiliarias();
                                             #<?= htmlspecialchars($item['ID']) ?>
                                         </span>
                                     </div>
-                                    
                                     <hr class="text-muted my-3">
-
                                     <div class="d-flex flex-column gap-2 fs-6 text-secondary">
                                         <div>
                                             <strong class="text-dark">Telefone:</strong> 
