@@ -76,7 +76,7 @@ $imoveis = $modelo_imovel->listar_imoveis();
                         
                         <li><h6 class="dropdown-header text-uppercase text-muted small fw-bold">Imobiliárias</h6></li>
                         <li><a class="dropdown-item rounded-2" href="inserir_imobiliarias.php">Cadastrar Imobiliária</a></li>
-                        <li><a class="dropdown-item rounded-2" href="listar_imobiliarias.php">Listar Parceiras</a></li>
+                        <li><a class="dropdown-item rounded-2" href="listar_parceiras.php">Listar Parceiras</a></li>
                     </ul>
                 </div>
                 <div class="nav-link"> 
