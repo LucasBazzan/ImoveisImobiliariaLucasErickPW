@@ -80,23 +80,43 @@ $modelo      = $imobiliaria->listar_imobiliarias();
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="input-tipo-imovel" placeholder="Tipo" class="form-control form-control-lg fs-6" style="border-radius: 8px; border: 1px solid #d1d5db;" required>
+                            <input type="text" name="input-tipo-imovel" 
+                                placeholder="Tipo" 
+                                class="form-control form-control-lg fs-6" 
+                                style="border-radius: 8px; border: 1px solid #d1d5db;" required>
                         </div>
                         <div class="form-group">
-                            <input type="number" name="input-valor-imovel" placeholder="Valor (R$)" class="form-control form-control-lg fs-6" style="border-radius: 8px; border: 1px solid #d1d5db;" required>
+                            <input type="number" name="input-valor-imovel" 
+                                placeholder="Valor (R$)" 
+                                class="form-control form-control-lg fs-6" 
+                                style="border-radius: 8px; border: 1px solid #d1d5db;" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="input-bairro-imovel" placeholder="Bairro" class="form-control form-control-lg fs-6" style="border-radius: 8px; border: 1px solid #d1d5db;" required>
+                            <input type="text" name="input-bairro-imovel"
+                            placeholder="Bairro" 
+                            class="form-control form-control-lg fs-6" 
+                            style="border-radius: 8px; border: 1px solid #d1d5db;" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="input-descricao-imovel" placeholder="Descrição" class="form-control form-control-lg fs-6" rows="4" style="border-radius: 8px; border: 1px solid #d1d5db;" required></textarea>
+                            <textarea name="input-descricao-imovel"
+                                placeholder="Descrição" 
+                                class="form-control form-control-lg fs-6" 
+                                rows="4" 
+                                style="border-radius: 8px; border: 1px solid #d1d5db;" required>
+                            </textarea>
                         </div>
                         <div class="form-group">
                             <label class="form-label text-secondary fw-bold ms-1 mb-1">Foto do Imóvel:</label>
-                            <input type="file" name="input-foto-imovel" accept="image/*" class="form-control form-control-lg fs-6" style="border-radius: 8px; border: 1px solid #d1d5db;" required>
+                            <input type="file" name="input-foto-imovel" 
+                                accept="image/*" 
+                                class="form-control form-control-lg fs-6" 
+                                style="border-radius: 8px; border: 1px solid #d1d5db;" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="input-situacao-imovel" placeholder="Situação" class="form-control form-control-lg fs-6" style="border-radius: 8px; border: 1px solid #d1d5db;" required>
+                            <input type="text" name="input-situacao-imovel" 
+                                placeholder="Situação" 
+                                class="form-control form-control-lg fs-6" 
+                                style="border-radius: 8px; border: 1px solid #d1d5db;" required>
                         </div>
                         <button type="submit" class="btn btn-dark btn-lg rounded-3 py-2 fs-5 mt-2 shadow-sm"> Cadastrar Imóvel </button>
                     </form>

@@ -9,19 +9,17 @@ class ImobiliariaController {
         
         $imobiliaria = new Imobiliaria();
 
-        $imobiliaria->set_id((int) $_POST['']);
-        $imobiliaria->set_nome($_POST['']);
-        $imobiliaria->set_telefone( $_POST['']);
-        $imobiliaria->set_contato($_POST['']);
+        $imobiliaria->set_nome($_POST['input-nome-imobiliaria']);
+        $imobiliaria->set_telefone( $_POST['input-telefone-imobiliaria']);
+        $imobiliaria->set_contato($_POST['input-contato-imobiliaria']);
 
         $sql = "
-            INSERT INTO (Nome, Telefone, Contato) VALUES
+            INSERT INTO imobiliaria (Nome, Telefone, Contato) VALUES
             (:Nome, :Telefone, :Contato)
         ";
 
         $st = $pdo->prepare($sql);
 
-        $st->bindValue(':ID', $imobiliaria->get_id());
         $st->bindValue(':Nome', $imobiliaria->get_nome());
         $st->bindValue(':Telefone', $imobiliaria->get_telefone());
         $st->bindValue(':Contato', $imobiliaria->get_contato());

@@ -171,7 +171,6 @@ $imoveis = $modelo_imovel->listar_imoveis();
     </section>
     
     <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/painel_administrador.js"></script>
 </body>
 
 </html>
